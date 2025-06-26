@@ -7,7 +7,7 @@ A curated anthology of **poems**, **song lyrics**, and **books** in various text
 
 ## 🚀 Open Project Index
 
-[![🚀 Open Test Onlin Index](https://img.shields.io/badge/🚀-Open_Test_Onlin_Index-blue?style=for-the-badge)](./index.html)
+[![🚀 Test Onlin Index](https://img.shields.io/badge/🚀-Open_Test_Onlin_Index-blue?style=for-the-badge)](https://bocaletto-luca.github.io/LiteraryTexts/index.html)
 
 ## 📂 Repository Structure Example
 
