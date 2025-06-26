@@ -17,9 +17,9 @@ A curated anthology of **poems**, **song lyrics**, and **books** in various text
 
 ```
 /
-├── poesie/       # Poems in plain text and Markdown
-├── canzoni/      # Song lyrics in multiple formats
-├── libri/        # Complete books or excerpts in PDF/EPUB
+├── ita/      # Lang Italian: Poems in plain text and Markdown, Song lyrics in multiple formats, Complete books or excerpts in PDF/EPUB, and others files.
+├── eng/      # Lang English: Poems in plain text and Markdown, Song lyrics in multiple formats, Complete books or excerpts in PDF/EPUB, and others files.
+├── index.html    # home project
 ├── LICENSE       # Full text of the CC BY-NC-SA 4.0 license
 └── README.md     # Project overview
 ```
