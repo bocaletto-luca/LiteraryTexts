@@ -3,7 +3,7 @@
 
 [![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-A curated anthology of **poems**, **song lyrics**, and **books** in various text formats—`.txt`, `.md`, `.html`, `.pdf`, and `.epub`. This collection celebrates the power of words and preserves each work’s unique voice, always crediting its creator.
+A curated anthology of **poems**, **song lyrics**, and **books** in various text formats:`*.txt`, `*.md`, `*.html`, `*.pdf`, `*.epub` and oteres files in this repository. This collection celebrates the power of words and preserves each work’s unique voice, always crediting its creator.
 
 ## 📂 Repository Structure
 
