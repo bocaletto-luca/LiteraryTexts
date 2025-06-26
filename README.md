@@ -40,3 +40,5 @@ Read the full license in the [LICENSE](LICENSE) file.
 © 2025 – All works contained here require proper attribution and non-commercial use only.  
 
 ---
+
+CC BY-NC-SA 4.0
