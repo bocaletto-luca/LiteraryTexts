@@ -1,4 +1,4 @@
-# LiteraryTexts
+# Literary Texts
 
 Literary Texts By Bocaletto Luca
 
