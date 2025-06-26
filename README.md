@@ -5,7 +5,11 @@
 
 A curated anthology of **poems**, **song lyrics**, and **books** in various text formats:`*.txt`, `*.md`, `*.html`, `*.pdf`, `*.epub` and oteres files in this repository. This collection celebrates the power of words and preserves each work’s unique voice, always crediting its creator.
 
-## 📂 Repository Structure
+## 🚀 Open Project Index
+
+[![🚀 Open Test Onlin Index](https://img.shields.io/badge/🚀-Open_Test_Onlin_Index-blue?style=for-the-badge)](./index.html)
+
+## 📂 Repository Structure Example
 
 ```
 /
