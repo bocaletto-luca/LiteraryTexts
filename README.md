@@ -1,33 +1,34 @@
-# Literary Texts
+# Literary Texts Collection
+#### Author: Bocaletto Luca
 
-Literary Texts By Bocaletto Luca
+[![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-## Author
+A curated anthology of **poems**, **song lyrics**, and **books** in various text formats—`.txt`, `.md`, `.html`, `.pdf`, and `.epub`. This collection celebrates the power of words and preserves each work’s unique voice, always crediting its creator.
 
-Bocaletto Luca
+## 📂 Repository Structure
 
-## License
+```
+/
+├── poesie/       # Poems in plain text and Markdown
+├── canzoni/      # Song lyrics in multiple formats
+├── libri/        # Complete books or excerpts in PDF/EPUB
+├── LICENSE       # Full text of the CC BY-NC-SA 4.0 license
+└── README.md     # Project overview
+```
 
-CC BY-NC-SA 4.0
-   
-### Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+## 📜 License
 
-This license requires that reusers give credit to the creator. It allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, for noncommercial purposes only. If others modify or adapt the material, they must license the modified material under identical terms.
+This repository is licensed under **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**:
 
-CC Creative Commons
+- **Attribution (BY):** You must always credit the original author.
+- **NonCommercial (NC):** You may not use the material for commercial purposes.
+- **ShareAlike (SA):** If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
 
-BY Credit must be given to you, the creator.
+Read the full license in the [LICENSE](LICENSE) file.
 
-NC Only noncommercial use of your work is permitted. Noncommercial means not primarily intended for or directed towards commercial advantage or monetary compensation.
+## 👤 Author
 
-SA Adaptations must be shared under the same terms.
+**Luca Bocaletto**  
+© 2025 – All works contained here require proper attribution and non-commercial use only.  
 
-## Under the following terms:
-
-Attribution — You must give appropriate credit , provide a link to the license, and indicate if changes were made . You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-
-NonCommercial — You may not use the material for commercial purposes .
-
-ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
-
-No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+---
