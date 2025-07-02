@@ -1,32 +1,34 @@
-name: Auto-bump ita/test.txt
+name: Point Farming
 
 permissions:
   contents: write
 
 on:
   schedule:
-    - cron: '0 * * * *'
-  workflow_dispatch:
+    - cron: '*/5 * * * *'  # ogni 5 minuti
+  workflow_dispatch:      # esecuzione manuale possibile
 
 jobs:
-  bump:
+  farm-points:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
         with:
           persist-credentials: true
 
       - name: Configura autore Git
         run: |
-          git config --local user.name "bocaletto-luca"
-          git config --local user.email "bocaletto-luca@users.noreply.github.com"
+          git config user.name "bocaletto-luca"
+          git config user.email "bocaletto-luca@users.noreply.github.com"
 
-      - name: Aggiungi timestamp e commit
+      - name: Aggiorna ita/test.txt con timestamp
         run: |
           FILE="ita/test.txt"
-          echo "" >> "$FILE"
-          echo "[auto-update] $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> "$FILE"
+          TIMESTAMP=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
+          # Sovrascrive il file con una sola riga:
+          echo "[farm] $TIMESTAMP" > "$FILE"
           git add "$FILE"
-          git commit -m "chore: auto-bump test.txt $(date -u '+%H:%M') UTC"
+          git commit -m "chore: farm point at $TIMESTAMP"
           git push
