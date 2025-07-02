@@ -2,27 +2,26 @@ name: Auto-bump ita/test.txt
 
 on:
   schedule:
-    - cron:  '0 * * * *'    # ogni ora; modifica se vuoi meno frequenza
-  workflow_dispatch:        # permette l’avvio manuale
+    - cron: '0 * * * *'      # ogni ora 
+  workflow_dispatch:        # esecuzione manuale da Actions
 
 jobs:
   bump:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
         with:
           persist-credentials: true
 
-      - name: Aggiorna timestamp in ita/test.txt
+      - name: Aggiungi timestamp in ita/test.txt
         run: |
           FILE="ita/test.txt"
-          # Aggiunge una riga vuota (opzionale) e poi il timestamp UTC
-          echo "" >> $FILE
-          echo "[auto-update] $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $FILE
-          # Configura l’utente e committa
+          echo "" >> "$FILE"
+          echo "[auto-update] $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> "$FILE"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add $FILE
-          git commit -m "chore: auto-update test.txt $(date -u '+%H:%M') UTC"
+          git add "$FILE"
+          git commit -m "chore: auto-bump test.txt $(date -u '+%H:%M') UTC"
           git push
