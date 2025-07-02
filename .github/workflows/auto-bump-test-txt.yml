@@ -1,4 +1,5 @@
 name: Auto-bump ita/test.txt
+
 permissions:
   contents: write
 
@@ -10,17 +11,22 @@ on:
 jobs:
   bump:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
         with:
           persist-credentials: true
-      - name: Bump timestamp
+
+      - name: Configura autore Git
+        run: |
+          git config --local user.name "bocaletto-luca"
+          git config --local user.email "bocaletto-luca@users.noreply.github.com"
+
+      - name: Aggiungi timestamp e commit
         run: |
           FILE="ita/test.txt"
           echo "" >> "$FILE"
           echo "[auto-update] $(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> "$FILE"
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add "$FILE"
           git commit -m "chore: auto-bump test.txt $(date -u '+%H:%M') UTC"
           git push
