@@ -1,20 +1,19 @@
-name: Point Farming
+name: Auto-bump ita/test.txt
 
 permissions:
   contents: write
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # ogni 5 minuti
-  workflow_dispatch:      # esecuzione manuale possibile
+    - cron: '*/5 * * * *'      # ogni 5 minuti
+  workflow_dispatch:
 
 jobs:
-  farm-points:
+  bump:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           persist-credentials: true
 
@@ -23,12 +22,11 @@ jobs:
           git config user.name "bocaletto-luca"
           git config user.email "bocaletto-luca@users.noreply.github.com"
 
-      - name: Aggiorna ita/test.txt con timestamp
+      - name: Sovrascrive ita/test.txt con timestamp
         run: |
           FILE="ita/test.txt"
           TIMESTAMP=$(date -u +'%Y-%m-%d %H:%M:%S UTC')
-          # Sovrascrive il file con una sola riga:
           echo "[farm] $TIMESTAMP" > "$FILE"
           git add "$FILE"
-          git commit -m "chore: farm point at $TIMESTAMP"
+          git commit -m "chore: farm point $TIMESTAMP"
           git push
