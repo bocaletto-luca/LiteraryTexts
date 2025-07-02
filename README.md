@@ -11,7 +11,9 @@ A curated anthology of **poems**, **song lyrics**, and **books** in various text
 
 ## 🚀 Open Project Index
 
-[![🚀 Test Onlin Index](https://img.shields.io/badge/🚀-Open_Test_Onlin_Index-blue?style=for-the-badge)](https://bocaletto-luca.github.io/LiteraryTexts/index.html)
+[![🚀 Test Online English](https://img.shields.io/badge/🚀-Open_Test_Online_English-blue?style=for-the-badge)](https://bocaletto-luca.github.io/LiteraryTexts/index.html)
+
+[![🚀 Testa Online Italiano](https://img.shields.io/badge/🚀-Testa_Online_Italiano-blue?style=for-the-badge)](https://bocaletto-luca.github.io/LiteraryTexts/index-ita.html)
 
 ## 📂 Repository Structure Example
 
